@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Rajdhani:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Rajdhani:wght@400;500&display=swap");
 
 body {
-    font-family: 'Rajdhani', serif;
+    font-family: "Rajdhani", serif;
     background-color: #0d0d0d;
     color: #f0f0f0;
     display: flex;
@@ -10,6 +10,7 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 header {
@@ -21,8 +22,8 @@ header {
 }
 
 .logo h1 {
-    font: 700 56px 'Orbitron', serif;
-    color: #FFEA00;
+    font: 700 56px "Orbitron", serif;
+    color: #ffea00;
     text-shadow: 2px 2px 10px rgba(255, 234, 0, 0.7);
     animation: glitch 1s ease-in-out infinite, pause 2s ease-in-out infinite;
     letter-spacing: 2px;
@@ -30,8 +31,8 @@ header {
 }
 
 .subtitle p {
-    font: 14px 'Orbitron', serif;
-    color: #FF007F;
+    font: 14px "Orbitron", serif;
+    color: #ff007f;
 }
 
 @keyframes glitch {
@@ -72,8 +73,8 @@ main {
     background-color: rgba(255, 255, 255, 0.1);
     padding: 20px;
     border-radius: 8px;
-    border: 1px solid #FFEA00;
-    box-shadow: 0 0 15px #FFEA00;
+    border: 1px solid #ffea00;
+    box-shadow: 0 0 15px #ffea00;
     color: #ffffff;
 }
 
@@ -95,8 +96,8 @@ main {
 }
 
 .main-article h2 {
-    font: 1.5rem 'Orbitron', serif;
-    color: #FF007F;
+    font: 1.5rem "Orbitron", serif;
+    color: #ff007f;
     margin-bottom: 10px;
 }
 
@@ -110,27 +111,30 @@ main {
 }
 
 .main-article p {
-    font-family: 'Rajdhani', serif;
+    font-family: "Rajdhani", serif;
     font-size: 1rem;
     color: #cccccc;
 }
 
-.article, .sidebar {
+.article,
+.sidebar {
     background-color: rgba(255, 255, 255, 0.1);
     padding: 20px;
     border-radius: 8px;
-    border: 1px solid #00FFF0;
-    box-shadow: 0 0 15px #00FFF0;
+    border: 1px solid #00fff0;
+    box-shadow: 0 0 15px #00fff0;
     color: #ffffff;
 }
 
-.article h3, .sidebar h3 {
-    font-family: 'Orbitron', serif;
-    color: #FF007F;
+.article h3,
+.sidebar h3 {
+    font-family: "Orbitron", serif;
+    color: #ff007f;
 }
 
-.article p, .sidebar p {
-    font-family: 'Rajdhani', serif;
+.article p,
+.sidebar p {
+    font-family: "Rajdhani", serif;
     color: #cccccc;
 }
 
@@ -141,14 +145,16 @@ main {
 }
 
 @media (max-width: 480px) {
-    .article, .sidebar {
+    .article,
+    .sidebar {
         padding: 15px;
         font-size: 0.9rem;
     }
 }
 
 @media print {
-    body, html {
+    body,
+    html {
         height: 50%;
         overflow: visible;
     }
@@ -159,16 +165,27 @@ main {
         display: block;
     }
 
-    .main-article, .article, .sidebar {
+    .main-article,
+    .article,
+    .sidebar {
         margin: 10px auto 20px auto;
         page-break-inside: avoid;
     }
 
-    header, footer, aside, .sidebar {
+    header,
+    footer,
+    aside,
+    .sidebar {
         display: none;
     }
 
-    .text-content, h1, h2, h3, h4, p, li {
+    .text-content,
+    h1,
+    h2,
+    h3,
+    h4,
+    p,
+    li {
         font-size: 12pt;
         word-wrap: break-word;
         overflow-wrap: break-word;
